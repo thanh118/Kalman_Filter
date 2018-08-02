@@ -1,5 +1,13 @@
-I create a rospackage to translate from voice command to the goal corrdinate of the robot. So instead of you muss type your coridmate by hand or use rviz, you can just say it, and robot will go to the goal.
 
-Additionly, right now i also apply the CUDA Nvidia to increate the speed of image calssification for the robot. An new convolution neural network algorithm call YOLO(you only look one) applied to help robot classified the object, the database is ImageNet. The robot right now can classified about 20 catergories includes auto, person, traffic light, traffic sign, cell phone... with very fast speed in real life and accuray about 90 percent. I am developing an robot action for each kind of object calssificate. For example, if it see the red line, it should stop, continue to move if light is green. 
+This is step by step applying kalman filter to estimate car position in a very simple situation that car only moving forward and velocity is constant. This code estimate the x and P, current position and the uncertainty probability. 
+
+Because all of calculate of Kalman_filter is base on Matrix, therefore first we need to make some calculation with matrix first. The code bellow describes that.
+
+After that, we just apply the formulas of Kalman filter and rewrite the funtionc. Here I make two version, one in python and C++, C++ is a little bit longer but if will fix if your project writes in c++. 
+
+Below I also want to explain the methods to read informarion on internet or wiki, then rewrites them in our code, 
+
+Because on wiki they write the functions in general and more mathematics, therefore we need to understand and then transform it to code.
+
 
  
