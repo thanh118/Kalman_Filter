@@ -1,0 +1,5 @@
+I create a rospackage to translate from voice command to the goal corrdinate of the robot. So instead of you muss type your coridmate by hand or use rviz, you can just say it, and robot will go to the goal.
+
+Additionly, right now i also apply the CUDA Nvidia to increate the speed of image calssification for the robot. An new convolution neural network algorithm call YOLO(you only look one) applied to help robot classified the object, the database is ImageNet. The robot right now can classified about 20 catergories includes auto, person, traffic light, traffic sign, cell phone... with very fast speed in real life and accuray about 90 percent. I am developing an robot action for each kind of object calssificate. For example, if it see the red line, it should stop, continue to move if light is green. 
+
+ 
